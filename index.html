@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Prajwal Markal Puttaswamy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Prajwal Markal Puttaswamy</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="certification" onclick="toggleMenu()">certifications</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img class="profile-pic" src="./assets/profile-pic.png" alt="Prajwal profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Prajwal Markal Puttaswamy</h1>
+          <p class="section__text__p2">Data Scientist</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Prajwal-Markal-Puttaswamy.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/prajwal-markal-puttaswamy-3706331bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc2dvgmEGRuuvFbtKsuSu1A%3D%3D'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/prajwal467262/'"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1"></p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="profile-pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p> Data Scientist Intern <br />VLSI Engineer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Master's in Applied Data Science <br />Bachelor's in Electronics and Communication Engineering</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                <p>Hi, I’m Prajwal, a passionate data professional with a strong focus on turning raw data into actionable insights. I specialize in analyzing, visualizing, and transforming data to help businesses make informed, data-driven decisions.</p>
+                
+                <br>
+
+                <p>With expertise in Python, R, SQL, Tableau, and Excel, I have a solid foundation in data aggregation, data cleaning, data calculations, and data visualization. My skill set also includes structured thinking, problem-solving, and a deep understanding of data ethics. I excel at using spreadsheets and other analytical tools to create impactful presentations that drive results.</p>
+                
+                <br>
+
+                <p>I am continuously learning and expanding my knowledge of data analytics and earning criteria, enabling me to tackle complex challenges with innovative solutions. Whether it’s building predictive models, optimizing workflows, or creating interactive dashboards, I’m dedicated to delivering insights that empower strategic decision-making.</p>
+            
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Data Scientist Intern</h3>
+              <div class="text-container">
+                <article>
+                  <ul>
+                    <li>Optimizing strategic decision-making by 20% through comprehensive property data analysis with Python and Tableau, identifying market trends and customer preferences.</li>
+                    <li>Elevating productivity by 25% using GitHub, Slack, Jira, and Confluence for seamless team communication and collaboration.</li>
+                    <li>Enhancing operational efficiency and reducing property valuation time by 15% through advanced machine learning models with Python and MATLAB.</li>
+                    <li>Streamlining data storage and processing with Google Cloud Suite, cutting processing time by 30% and decision-making processes.</li>
+                    <br>
+                </ul>
+                </article>
+              </div>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R Programming</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h3 class="experience-sub-title">VLSI Engineer</h3>
+            <div class="text-container">
+                <article>
+                    <ul>
+                      <li>Automated data pipelines and analysis, reducing processing times by 30% and enabling real-time decision-making.</li>
+                      <li>Developed and deployed predictive models with 20% higher accuracy, enhancing forecasting and risk mitigation.</li>
+                      <li>Delivered actionable insights using data visualization tools, improving project efficiency by 25% and stakeholder satisfaction.</li>
+                      <li>Optimized complex datasets using Python, SQL, and R, identifying data-driven trends for strategic decisions.</li>
+                      <li>Collaborated with cross-functional teams to implement cost-saving initiatives, contributing to revenue growth.</li>
+                      <li>Transformed business challenges into data-driven solutions, demonstrating problem-solving and adaptability.</li>
+                        <br>
+                    </ul>
+                </article>
+            </div>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data wrangling</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Statistical Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+              <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Exploratory Data Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+              <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Visualization</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+    <section id="education">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Education</h1>
+        
+        <div class="education-details-container">
+          <!-- Master's Education Item -->
+          <div class="education-item">
+            <div class="education-header">
+              <img src="./assets/essex-university.png" alt="University Logo" class="education-icon">
+              <div>
+                <h2 class="education-sub-title">Masters in Applied Data Science</h2>
+                <p class="education-institution">University of Essex</p>
+                <p class="education-period">Jan 2023 - Jan 2024</p>
+                <p class="education-grade">Grade: Distinction</p>
+              </div>
+            </div>
+            
+            <div class="education-content">
+              <h3 class="education-section-title">Key Modules:</h3>
+              <ul class="education-modules">
+                <li>An Approachable Introduction to Programming</li>
+                <li>Data Visualisation</li>
+                <li>Programming & Text Analytics with R</li>
+                <li>Database & Data Processing with SQL</li>
+                <li>Observational Data</li>
+                <li>Artificial Intelligence & Machine Learning with Applications</li>
+                <li>Foundational Mathematics for Data Science</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Bachelor's Education Item -->
+          <div class="education-item">
+            <div class="education-header">
+              <img src="./assets/cmr-institute.png" alt="University Logo" class="education-icon">
+              <div>
+                <h2 class="education-sub-title">Bachelor of Engineering in Electronics and Communication</h2>
+                <p class="education-institution">CMR Institute of Technology, Bangalore</p>
+                <p class="education-period">Aug 2017 - Aug 2021</p>
+                <p class="education-grade">Grade: First Class</p>
+              </div>
+            </div>
+            
+            <div class="education-content">
+              <h3 class="education-section-title">Key Modules:</h3>
+              <ul class="education-modules">
+                <li>Python Programming</li>
+                <li>VHDL</li>
+                <li>Computer Communication</li>
+                <li>C Programming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>  
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="project-container">
+          <div class="details-container color-container">
+            <div class="image-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Credit card fraud analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/prajwal467262/Credit-Card-Fraud-Detection/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="image-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Exploratory-Data-Analysis-of-Dallas-Policing-Data-2016</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/prajwal467262/Exploratory-Data-Analysis-of-Dallas-Policing-Data-2016-/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="image-container">
+              <img
+                src="./assets/Project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Text Analysis On TED Talks</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/prajwal467262/Text-Analysis-On-TED-Talks/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="image-container">
+              <img
+                src="./assets/project-4.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AI and ML driven Approach for Comprehensive Tweet Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/prajwal467262/An-AI--and-ML-driven-Approach-for-Comprehensive-Tweet-Analysis/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="image-container">
+              <img
+                src="./assets/project-5.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Road Accident Dashboard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://public.tableau.com/app/profile/prajwal.m.p6835/viz/NetflixDashboard_17367704800570/Netflix/'"
+              >
+                Tableau
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="image-container">
+              <img
+                src="./assets/project-6.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Netflix Dashboard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://public.tableau.com/app/profile/prajwal.m.p6835/viz/RoadAccidentDashboard_17362758583120/Dashboard1/'"
+              >
+                Tableau
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Certifications</h1>
+      
+      <div class="education-details-container">
+        <!-- Certification 1 -->
+        <div class="education-item">
+          <div class="education-header">
+            <img src="./assets/Logo-1.png" alt="Coursera Logo" class="education-icon">
+            <div>
+              <h2 class="education-sub-title">Google Data Analytics Professional Certificate</h2>
+              <p class="education-institution">Coursera</p>
+              <p class="education-period">Issued: January 2025</p>
+            </div>
+          </div>
+          <div class="education-content">
+            <a href="https://www.credly.com/badges/9a7c369f-425a-4031-b1d4-9ff2012ff72e/public_url/" target="_blank" class="certificate-link">View Certificate</a>
+          </div>
+        </div>
+        
+        <!-- Certification 2 -->
+        <div class="education-item">
+          <div class="education-header">
+            <img src="./assets/Logo-2.png" alt="edX Logo" class="education-icon">
+            <div>
+              <h2 class="education-sub-title">Data Analytics Essentials</h2>
+              <p class="education-institution">Cisco</p>
+              <p class="education-period">Issued: March 2024</p>
+            </div>
+          </div>
+          <div class="education-content">
+            <a href="https://www.credly.com/badges/86360c80-7501-458d-96c5-7b53c43078c4/public_url/" target="_blank" class="certificate-link">View Certificate</a>
+          </div>
+        </div>
+           
+        <!-- Certification 3 -->
+        <div class="education-item">
+          <div class="education-header">
+            <img src="./assets/Logo-3.png" alt="Udacity Logo" class="education-icon">
+            <div>
+              <h2 class="education-sub-title">Getting Started with Data Analytics on AWS</h2>
+              <p class="education-institution">Coursera</p>
+              <p class="education-period">Issued: June 2024</p>
+            </div>
+          </div>
+          <div class="education-content">
+            <a href="https://coursera.org/share/10dc31bc6ebb891557049b6ebb2e24e1/" target="_blank" class="certificate-link">View Certificate</a>
+          </div>
+        </div>
+      </div> 
+    </section>     
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Prajwalkmr158@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://www.linkedin.com/in/prajwal-markal-puttaswamy-3706331bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bc2dvgmEGRuuvFbtKsuSu1A%3D%3D'">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Prajwal Markal Puttaswamy. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

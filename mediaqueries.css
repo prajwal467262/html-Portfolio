@@ -21,8 +21,14 @@
     }
     #experience,
     .experience-details-container {
-      margin-top: 2rem;
-    }
+        margin-top: 2rem;
+        width: auto; /* Let the container size adapt */
+        padding: 1rem;
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+        display: flex; /* Use Flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+      }
     #profile,
     .section-container {
       display: block;
@@ -152,3 +158,41 @@
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    #profile {
+        margin-bottom: -1rem; /* Reduce the bottom margin of the profile section */
+      }
+    
+      #about {
+        margin-top: -1rem; /* Reduce the top margin of the about section */
+      }
+    /* Center-align and scale down about-pic */
+    .about-pic {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        max-width: 350px;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+      }
+        /* Footer adjustments */
+    footer nav {
+      display: flex;
+      flex-direction: column; /* Stack links vertically */
+      gap: 1rem; /* Add spacing between links */
+      text-align: center; /* Center-align the links */
+    }
+    #certifications {
+        padding-top: 1rem;
+        padding-bottom: 3rem; /* Add spacing above certifications section */
+      }
+ 
+    /* Adjust spacing in the contact section */
+    #contact {
+        margin-top: 2rem;
+        margin-bottom: -1.5rem;
+    }
+  }
+  
+  

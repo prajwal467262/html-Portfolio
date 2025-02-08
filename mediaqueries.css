@@ -23,12 +23,17 @@
     .experience-details-container {
         margin-top: 2rem;
         width: auto; /* Let the container size adapt */
-        padding: 1rem;
+        padding: 0.5rem;
         box-sizing: border-box; /* Ensure padding doesn't affect width */
         display: flex; /* Use Flexbox for alignment */
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
       }
+
+     .experience-details-container {
+      padding: 0 !important;
+     }
+     
     #profile,
     .section-container {
       display: block;
@@ -53,110 +58,148 @@
     }
   }
   
- @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: auto; /* Allow sections to adjust based on content */
-    padding: 1rem; /* Add padding for better spacing */
-  }
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: auto; /* Allow sections to adjust based on content */
+      padding: 1rem; /* Add padding for better spacing */
+    }
+  
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+  
+    article {
+      font-size: 1rem;
+    }
 
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
 
-  article {
-    font-size: 1rem;
-  }
-
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  footer nav {
-    position: relative; /* Allow z-index to work properly */
-    z-index: 10; /* Ensure the nav links are above other elements */
+    #experience article .icon {
+      height: 1.5rem; /* Adjust icon height as needed */
+      width: auto; /* Let the width adjust based on image */
+    }
+    
+    #experience article h3 {
+      font-size: 0.8rem; /* Adjust font size as needed */
+      margin-bottom: 0.5rem; /* Adjust margin bottom as needed */
+    }
+    
+    #experience article p {
+      font-size: 0.9rem; /* Adjust font size as needed */
+      color: #555; /* Adjust text color as needed */
+    }
+  
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    footer nav {
+      position: relative; /* Allow z-index to work properly */
+      z-index: 10; /* Ensure the nav links are above other elements */
+    }
+  
+    .nav-links a {
+      pointer-events: auto; /* Ensure links are clickable */
+      color: inherit; /* Keep the color consistent */
+      text-decoration: none; /* Optional: Remove underline */
+    }
+  
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+  
+    .contact-info-container {
+      margin: 0 0 1rem; /* Add bottom margin to separate items */
+    }
+  
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+  
+    .project-container {
+      grid-template-columns: 1fr; /* Stack projects vertically */
+    }
+  
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem; /* Increase gap between links */
+      text-align: center;
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+      margin-top: 1rem; /* Add spacing above nav links */
+    }
+  
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+  
+    .about-pic {
+      width: 100%; /* Ensure image takes up full width of container */
+      height: auto; /* Keep the aspect ratio */
+    }
+  
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .text-container {
+      text-align: justify;
+    }
+  
+    #contact {
+      margin-top: auto;
+      margin-bottom: 2rem; /* Add spacing below contact section */
+    }
+  
+    #certifications {
+      padding-top: 1rem;
+      padding-bottom: 5rem; /* Add spacing above certifications section */
+    }
+  
+    footer {
+      margin-top: 0.5rem; /* Add spacing above footer */
+    }
+  
+   
+    .experience-item {
+      width: 90%; /* Reduce width to fit within the container */
+      margin: 0 auto; /* Center the content */
+      text-align: center; /* Align text in the center */
+    }
+  
+    .experience-sub-title {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      margin-bottom: 0.5rem; /* Add spacing below the title */
+    }
+  
+    .experience-item img {
+      max-width: 100%; /* Ensure images don’t overflow */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .experience-item p {
+      font-size: 0.9rem; /* Reduce font size for smaller screens */
+      word-wrap: break-word; /* Prevent text overflow */
+    }
   }
   
-  .nav-links a {
-    pointer-events: auto; /* Ensure links are clickable */
-    color: inherit; /* Keep the color consistent */
-    text-decoration: none; /* Optional: Remove underline */
-  }
-
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-
-  .contact-info-container {
-    margin: 0 0 1rem; /* Add bottom margin to separate items */
-  }
-
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-
-  .project-container {
-    grid-template-columns: 1fr; /* Stack projects vertically */
-  }
-
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem; /* Increase gap between links */
-    text-align: center;
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
-    margin-top: 1rem; /* Add spacing above nav links */
-  }
-
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  
-  .about-pic {
-    width: 100%; /* Ensure image takes up full width of container */
-    height: auto; /* Keep the aspect ratio */
-  }
-
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .text-container {
-    text-align: justify;
-  }
-
-  /* Additional Fix for Overlap */
-  #contact {
-    margin-top: auto;
-    margin-bottom: 2rem; /* Add spacing below contact section */
-  }
-
-  #certifications {
-    padding-top: 1rem;
-    padding-bottom: 5rem; /* Add spacing above certifications section */
-  }
-
-  footer {
-    margin-top: 0.5rem; /* Add spacing above footer */
-  }
-}
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
     #profile {

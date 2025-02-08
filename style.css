@@ -352,6 +352,7 @@ section {
 /* Adjustments for Experience Section Icons and Text */
 .article-container {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr); /* Two equal columns */
   gap: 1rem; /* Increase the gap between columns to 1rem */
 }

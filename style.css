@@ -1,5 +1,4 @@
 /* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -8,8 +7,8 @@
 }
 
 body {
-  color: #0570b0; /* change the text color to a dark gray */
-  background-color: #9ecae1; /* or any other color of your choice */
+  color: #0570b0;
+  background-color: #9ecae1;
 }
 
 html {
@@ -17,18 +16,16 @@ html {
 }
 
 p {
-  color:#252525;
+  color: #252525;
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -68,7 +65,6 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-
 #hamburger-nav {
   display: none;
 }
@@ -148,7 +144,6 @@ a:hover {
 }
 
 /* SECTIONS */
-
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -162,7 +157,6 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
   justify-content: center;
@@ -209,14 +203,12 @@ section {
 }
 
 /* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -264,7 +256,6 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
   position: relative;
   margin-bottom: 2rem;
@@ -313,7 +304,7 @@ section {
 }
 
 .text-container {
-  font-size: 20px; /* or any other font size you prefer */
+  font-size: 20px;
 }
 
 .section-container {
@@ -329,77 +320,78 @@ section {
 }
 
 /* EXPERIENCE SECTION */
-
 #experience {
   position: relative;
   margin-bottom: 2rem;
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .experience-details-container {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  margin-bottom: 2rem; /* Add more margin bottom to create space */
+  gap: 2rem;
 }
 
-/* Adjustments for Experience Section Icons and Text */
-.article-container {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-  gap: 1rem; /* Increase the gap between columns to 1rem */
+.experience-item {
+  background: #deebf7;
+  border: 2px solid rgb(4, 4, 4);
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
-article {
+.experience-sub-title {
+  color: #0570b0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header {
   display: flex;
-  align-items: center; /* Align items vertically */
-  gap: 0.5rem; /* Adjust the gap between icon and text */
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-article .icon {
-  height: 2rem; /* Adjust icon height as needed */
-  width: auto; /* Let the width adjust based on image */
+.experience-icon {
+  height: 2.5rem; /* 40px */
+  width: 2.5rem; /* Explicitly set width to match height */
+  margin-right: 1rem;
+  object-fit: contain; /* Ensure image scales proportionally */
 }
 
-article div {
-  flex: 2; /* Allow the text to expand */
+.experience-institution {
+  font-size: 1.2rem;
+  color: #0570b0;
 }
 
-article h3 {
-  font-size: 1rem; /* Adjust font size as needed */
-  margin-bottom: 0.5rem; /* Adjust margin bottom as needed */
+.experience-content {
+  margin-top: 1rem;
 }
 
-article p {
-  font-size: 1rem; /* Adjust font size as needed */
-  color: #555; /* Adjust text color as needed */
+.experience-section-title {
+  font-size: 1.2rem;
+  color: #0570b0;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-/* New styles for text-container */
-.text-container {
-  padding: 1rem 0; /* Add padding for better spacing */
+.experience-achievements,
+.experience-skills {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.text-container ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0; /* Remove default margin */
-}
-
-.text-container ul li {
-  margin-bottom: 1rem; /* Add space between list items */
-  line-height: 1.5; /* Adjust line height for readability */
+.experience-achievements li,
+.experience-skills li {
+  font-size: 1.1rem;
+  color: #252525;
+  margin-bottom: 0.5rem;
+  overflow-wrap: break-word; /* Ensure long words break to the next line */
+  hyphens: auto; /* Allow hyphenation for better text wrapping */
 }
 
 /* EDUCATION SECTION */
-
 #education {
   position: relative;
   margin-bottom: 2rem;
@@ -421,15 +413,16 @@ article p {
 .education-details-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Space between each education item */
+  gap: 2rem;
 }
 
 .education-item {
-  background: #deebf7; /* Background color */
-  border: 2px solid rgb(4, 4, 4); /* Border color */
-  padding: 1.5rem; /* Increased padding */
-  border-radius: 2rem; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  background: #deebf7;
+  border: 2px solid rgb(4, 4, 4);
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 .education-sub-title {
@@ -446,9 +439,10 @@ article p {
 }
 
 .education-icon {
-  height: 2.5rem; /* Adjusted icon height */
-  width: auto;
-  margin-right: 1rem; /* Increased space between icon and text */
+  height: 2.5rem; /* 40px */
+  width: 2.5rem; /* Explicitly set width to match height */
+  margin-right: 1rem;
+  object-fit: contain; /* Ensure image scales proportionally */
 }
 
 .education-institution {
@@ -464,12 +458,12 @@ article p {
 
 .education-grade {
   font-size: 1rem;
-  color: #0570b0; /* Different color for grade text */
+  color: #0570b0;
   font-weight: 600;
 }
 
 .education-content {
-  margin-top: 1rem; /* Space between header and content */
+  margin-top: 1rem;
 }
 
 .education-section-title {
@@ -480,17 +474,18 @@ article p {
 }
 
 .education-modules {
-  margin-left: 1.5rem; /* Indent modules list */
+  margin-left: 1.5rem;
 }
 
 .education-modules li {
   font-size: 1rem;
   color: #252525;
   margin-bottom: 0.3rem;
+  overflow-wrap: break-word; /* Ensure long words break to the next line */
+  hyphens: auto; /* Allow hyphenation for better text wrapping */
 }
 
 /* PROJECTS SECTION */
-
 #projects {
   position: relative;
   margin-top: 2rem;
@@ -502,21 +497,19 @@ article p {
   background: rgb(250, 250, 250);
 }
 
-/* Grid layout for project container */
 .project-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
-  gap: 2rem; /* Space between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 .image-container {
   display: flex;
-  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-  gap: 1rem; /* Increase the gap between columns to 1rem */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
-/* Individual project image style */
 .project-img {
   border-radius: 2rem;
   width: 100%;
@@ -535,13 +528,12 @@ article p {
 }
 
 /* CONTACT */
-
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  margin-top:-12rem;
+  margin-top: -12rem;
   margin-bottom: -15rem;
 }
 
@@ -577,15 +569,13 @@ article p {
 }
 
 /* FOOTER SECTION */
-
 footer {
-  height: auto; /* Allow the footer to grow with content */
-  padding: 1rem; /* Add some padding for spacing */
-  margin: 0 1rem; /* Margins around the footer */
+  height: auto;
+  padding: 1rem;
+  margin: 0 1rem;
 }
 
 footer p {
-  text-align: center; /* Keep the text centered */
-  padding-top: 1rem; /* Add spacing at the top of the footer */
+  text-align: center;
+  padding-top: 1rem;
 }
-

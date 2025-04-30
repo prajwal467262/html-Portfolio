@@ -179,7 +179,9 @@
   
    
     .experience-item {
-      width: 90%; /* Reduce width to fit within the container */
+      width: 100%; /* Reduce width to fit within the container */
+      max-width: 90%;
+      padding: 1rem;
       margin: 0 auto; /* Center the content */
       text-align: center; /* Align text in the center */
     }
